@@ -1,0 +1,12 @@
+.loadMoreBtn {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .loadMoreBtn {
+    width: 120px;
+    margin-bottom: 50px;
+  }
+}

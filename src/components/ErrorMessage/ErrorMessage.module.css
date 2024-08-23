@@ -1,0 +1,12 @@
+.errorMessage {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e59462;
+  font-size: 20px;
+}
