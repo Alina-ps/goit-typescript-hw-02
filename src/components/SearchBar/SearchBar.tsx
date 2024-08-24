@@ -1,13 +1,18 @@
-import { Field, Form, Formik } from "formik";
-import toast, { Toaster } from "react-hot-toast";
-import s from "./SearchBar.module.css";
+import { Field, Form, Formik, FormikHelpers } from 'formik';
+import toast, { Toaster } from 'react-hot-toast';
+import s from './SearchBar.module.css';
+import { FC } from 'react';
+import { SearchBarProps } from './SearchBar.types';
 
-const SearchBar = ({ setQuery }) => {
-  const initialValues = { query: "" };
+const SearchBar: FC<SearchBarProps> = ({ setQuery }) => {
+  const initialValues = { query: '' };
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = (
+    values: typeof initialValues,
+    { resetForm }: FormikHelpers<typeof initialValues>
+  ) => {
     if (!values.query) {
-      toast.error("Please enter a search term.");
+      toast.error('Please enter a search term.');
       return;
     }
     setQuery(values.query);
