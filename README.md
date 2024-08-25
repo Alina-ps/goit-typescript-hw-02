@@ -1,4 +1,4 @@
-# Image Search Application
+# My Contacts App
 
 The Contacts App is a comprehensive web application designed for managing contacts. It offers functionalities such as adding, updating, and deleting contacts, with a user-friendly interface. The application is built with modern web technologies to provide a responsive and dynamic experience.
 
