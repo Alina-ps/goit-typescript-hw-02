@@ -1,50 +1,44 @@
-# My Contacts App
+# Image Search Application
 
-The Contacts App is a comprehensive web application designed for managing contacts. It offers functionalities such as adding, updating, and deleting contacts, with a user-friendly interface. The application is built with modern web technologies to provide a responsive and dynamic experience.
+This image search application allows users to search and browse through a vast collection of high-quality photos using the Unsplash API. Built with a modern tech stack, the application leverages React for dynamic and efficient rendering of the user interface, and TypeScript to ensure robust, type-safe code.
 
 ## Features
 
-1. **Contact Management**:
+1. **Search Functionality**:
 
-- Users can view, add, update, and delete their contacts.
-- Features a search box for filtering contacts by name or number.
+- Users can enter keywords to search for images related to any topic. The application sends queries to the Unsplash API and displays a gallery of relevant photos.
 
-2. **Authentication**:
+2. **Responsive Design**:
 
-- **Login Page**: Allows users to log in with their email and password. Validates input with Formik and Yup.
-- **Registration Page**: Enables users to create a new account by providing their name, email, and password. Also uses Formik and Yup for validation.
+- The UI is designed to be fully responsive, ensuring a seamless experience across all devices.
 
-3. **Responsive Design**:
+3. **Image Modal**:
 
-- The application is designed to be fully responsive, ensuring a smooth experience on various devices.
+- Users can click on any image to view it in a larger modal, with the image perfectly centered and scaled to fit within the modal dimensions.
 
-4. **Pages**:
+4. **Load More**:
 
-- **Home Page**: The landing page of the application, which provides general information and navigation options.
-- **Contacts Page**: Displays the list of contacts and includes functionalities to add, update, and delete contacts.
-- **Login Page**: Provides a form for user login.
-- **Registration Page**: Provides a form for new user registration.
-  
-5. **Modals**:
+- Infinite scroll or a 'Load More' button allows users to load additional images without leaving the current view.
 
-- **Confirmation Modal**: A dialog box that confirms the user's intent to delete a contact, preventing accidental deletions.
+5. **Error Handling**:
 
-6. **Loader**:
+- The application provides user-friendly error messages in case of network issues or invalid queries.
 
-- A visual loading indicator displayed during data processing and authentication activities.
+6. **Type-Safe Codebase**:
+
+- TypeScript is used throughout the project to catch potential errors early in the development process, improving code quality and maintainability.
 
 ## Technologies Used
 
-- **React**: For building the dynamic user interface.
-- **React Router**: For handling routing and navigation between pages.
-- **Redux Toolkit**: For managing application state and handling state logic.
-- **React-Redux**: Connects React components to the Redux store.
-- **Redux-Persist**: Ensures persistent storage of user data.
-- **Formik**: Simplifies form handling and validation.
-- **Yup**: Provides schema validation for forms.
-- **Vite**: A build tool for bundling and optimizing the application.
-- **clsx**: Utility for conditional CSS class names.
-- **React Hot Toast**: For displaying toast notifications.
-- **React Loader Spinner**: Provides a loading spinner component.
-- **Git & GitHub**: For version control and collaboration.
-- **Vercel**: Deployment platform providing continuous deployment and hosting.
+- **React**: Utilized for building the user interface.
+- **TypeScript**: For styling the application and providing a responsive layout.
+- **CSS Modules**: Used for styling components with scoped and maintainable CSS.
+- **Unsplash API**: The application interacts with the Unsplash API to fetch high-quality images based on user queries.
+- **React Hooks**: Used for managing component states, handling side effects like API calls, and updating the UI in response to user interactions.
+- **Formik**: Employed for handling form state and validation.
+- **React Hot Toast**: A lightweight toast notification library used for displaying feedback messages, such as search errors or success messages.
+- **React Modal**: Used to display images in a larger view when clicked.
+- **Vite**: A modern build tool used to bundle the application.
+- **Git**: Used for version control, tracking changes in the codebase, and collaboration.
+- **GitHub**: Serves as a remote repository for managing the codebase, collaborating with others, and deploying the application.
+- **Vercel**: Used for deploying the application, providing continuous deployment and hosting with an easy setup for React applications.
